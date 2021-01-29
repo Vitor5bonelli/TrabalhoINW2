@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="shortcut icon" href="../image/faviconindex.ico" type="image/x-icon">
+
+    <style>
+        body { background-color:#46B9AC;}
+
+        #heather{
+            background-image: url(../image/aviao.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            border: 3px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            font-style: oblique;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: #CD9A32;
+            margin-bottom: 10px;
+        }
+
+        #lista {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(76, 77, 75);
+            border: 3px solid black;
+            border-radius: 5px;
+            height: 50px;
+            
+        }
+
+        li{
+            float: left;           
+        }
+
+        li a{
+            display: block;
+            color:white;
+            text-align:center;
+            padding: 14px 123.1px;
+            text-decoration: none;
+            
+        }
+
+        li a:hover:not(.ativo){
+            background-color: blue;
+        }
+
+        li a.ativo{
+           color: ivory;
+           background-color: black;
+        }
+
+        img{
+            border-radius: 5%;
+            border: 3px solid black;
+            width: 100%;
+            height: 605px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body> <!--Título e apresentação-->
+    <div id="heather">
+
+    <h1>R.R.Viagens</h1>
+    <h2>Trazendo o maior conforto e rapidez, á você e sua família.</h2>
+
+    </div>
+
+    <nav> <!--Links de acesso á outras páginas-->
+        <ul id="lista">
+            <li><a href="pilotos.html" title="Vá para a pagina de pilotos">Página de Pilotos 👨‍✈️</a><br></li>
+            <li><a href="voos.html" title="Vá para a pagina de Voos">Página de Voos ✈️</a><br></li>
+            <li><a href="viagem.html" title="Vá para a pagina de viagens">Página de Viagens 🏝️</a><br></li>
+            <li><a href="relatórios.html" title="Vá para a pagina de relatórios">Página de Relatórios 📝</a><br></li>
+            <li><a href="sair.html" title="Saia do site.">Sair ❌</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="Imagem">
+            <img src="../image/aeroporto.jpg" alt="Imagem de um aeroporto">
+        </div>
+    </main>
+
+    <hr>
+    <footer> <!--Nome do grupo-->
+        <p>Site feito em conjunto por <i>Renan Brufato / Renan Lima / Vitor Bonelli &reg;</i></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página dos Pilotos</title>
+    <link rel="shortcut icon" href="../image/pilotos.png" type="image/x-icon">
+
+    <style>
+        body { background-color:#46B9AC;}
+
+        #heather{
+            background-image: url(../image/aviao.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            border: 3px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            font-style: oblique;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: #CD9A32;
+            margin-bottom: 10px;
+        }
+
+        h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #formulario {
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: #3265CD;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            padding: 20px;
+            background-image: url(../image/cockpit.jpg);
+            background-repeat: no-repeat;
+            background-size:100%; 
+            background-position-y: center;
+            color: white;
+    
+        }
+
+        #lista {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(76, 77, 75);
+            border: 3px solid black;
+            border-radius: 5px;
+            height: 50px;
+            
+        }
+
+        li{
+            float: left;           
+        }
+
+        li a{
+            display: block;
+            color:white;
+            text-align:center;
+            padding: 14px 123.1px;
+            text-decoration: none;
+            
+        }
+
+        li a:hover:not(.ativo){
+            background-color: blue;
+        }
+
+        li a.ativo{
+           color: ivory;
+           background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="heather">
+
+        <h1>R.R.Viagens</h1>
+        <h2>Trazendo o maior conforto e rapidez, á você e sua família.</h2>
+    
+    </div>
+
+    <nav> <!--Links de acesso á outras páginas-->
+        <ul id="lista">
+            <li><a href="voos.html" title="Vá para a pagina de Voos">Página de Voos ✈️</a><br></li>
+            <li><a href="viagem.html" title="Vá para a pagina de viagens">Página de Viagens 🏝️</a><br></li>
+            <li><a href="relatórios.html" title="Vá para a pagina de relatórios">Página de Relatórios 📝</a><br></li>
+            <li><a href="index.html" title="Volte para a página principal.">Voltar para página principal❌</a></li>
+        </ul>
+    </nav>
+
+    <h1>Pilotos R.R.V</h1>
+    <fieldset id="formulario">
+        <form>
+            <label for="registro">Registro de Piloto: </label>
+            <input type="text" id="registro" name="Registro">
+            <br> <br>
+
+            <label for="login">Nome: </label>
+            <input type="text" id="login" name="nome">
+            <br> <br>
+
+            <label for="dataNasc">Data de Nascimento: </label>
+            <input type="date" id="dataNasc" name="data">
+            <br> <br>
+
+            <label>Sexo: </label>
+            <input type="radio" id="homem" name="genero">
+            <label for="homem">Homem</label>
+            <input type="radio" id="mulher" name="genero">
+            <label for="mulher">Mulher</label>
+            <input type="radio" id="outro" name="genero">
+            <label for="outro">Outro</label>
+            <br> <br>
+
+            <label for="endEletronico">E-mail: </label>
+            <input type="email" id="endEletronico" name="Email">
+            <br> <br>
+
+            <label for="telefone">Telefone ou Celular: </label>
+            <input type="tel" id="telefone" name="numeroTelefone" placeholder="(99)99999-9999" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+            <br> <br>
+
+            <label>Cursos de especialização: </label> <br>
+
+            <input type="checkbox" id="AP" name="artigosPerigosos">
+            <label for="AP">Artigos Perigosos (Dangerous goods/HAZMAT)</label>
+            <input type="checkbox" id="SIMA" name="marcaçãoDeAeródromos">
+            <label for="SIMA">Sinalização, Iluminação e Marcações de Aeródromos</label>
+            <input type="checkbox" id="PSA" name="primeirosSocorros">
+            <label for="PSA">Primeiros Socorros em Aviação</label>
+            <br>
+            <input type="checkbox" id="TAI" name="tráfegoAéreoInternacional">
+            <label for="TAI">TAI: Tráfego Aéreo Internacional</label>
+            <input type="checkbox" id="PP" name="navegaçãoAéreaVisual">
+            <label for="PP">Navegação Aérea Visual (PP)</label>
+            <input type="checkbox" id="phenom" name="Phenom300">
+            <label for="phenom">Familiarização Phenom 300</label>
+            <br>
+            <input type="checkbox" id="tupi" name="P28A">
+            <label for="tupi">Ground School Embraer 712 - Tupi (P28A)</label>
+            <input type="checkbox" id="HAO" name="highAltitudeOperations">
+            <label for="HAO">High Altitude Operations</label>
+            <input type="checkbox" id="UP" name="unrulyPassanger">
+            <label for="UP">Gerenciamento de Passageiros Indisciplinados (Unruly Passenger)</label>
+            <br> <br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Redefinir">
+
+        </form>
+
+        <button>Listar Todos</button>
+        <button>Listar Um</button>
+        <button>Incluir</button>
+        <button>Alterar</button>
+        <button>Excluir</button>
+    </fieldset>
+
+    <footer> <!--Nome do grupo-->
+        <p>Site feito em conjunto por <i>Renan Brufato / Renan Lima / Vitor Bonelli &reg;</i></p>
+    </footer>
+</body>
+</html>

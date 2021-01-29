@@ -1,0 +1,176 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/viagem.png">
+
+<!--CSS -->
+<style>
+    body { background-color:#46B9AC;}
+
+    #heather{
+        background-image: url(../image/aviao.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: 3px solid black;
+        border-radius: 5px;
+        font-size: 20px;
+        font-style: oblique;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #CD9A32;
+        text-align: center;
+        
+    }
+
+    #formulario {
+        border: 3px solid black;
+        border-radius: 5px;
+        background-color: #3265CD;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        padding: 20px;
+        background-image: url(../image/selo1.jpg);
+        background-repeat: no-repeat;
+        background-size:100%; 
+        background-position-y: center;
+        
+    }
+
+    #lista {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(76, 77, 75);
+        border: 3px solid black;
+        border-radius: 5px;
+        height: 50px;
+            
+    }
+
+    li{
+        float: left;           
+    }
+
+    li a{
+        display: block;
+        color:white;
+        text-align:center;
+        padding: 14px 125.4px;
+        text-decoration: none;
+            
+    }
+
+    li a:hover:not(.ativo){
+        background-color: blue;
+    }
+
+    li a.ativo{
+        color: ivory;
+        background-color: black;
+    }
+
+    #rodape {
+        background-color:#46B9AC;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+</style>
+
+
+
+</head>
+
+
+<!--HTML -->
+<body>
+    
+    <div id="heather" >
+
+        <h1>R.R.Viagens</h1>
+        <h2>Trazendo o maior conforto e rapidez, á você e sua família.</h2>
+    
+    </div>
+    <br> 
+
+    <div id="links">  
+    </fieldset>
+    <nav> <!--Links de acesso á outras páginas-->
+        <ul id="lista">
+            <li><a href="pilotos.html" title="Vá para a pagina de pilotos">Página de Pilotos 👨‍✈️</a><br></li>
+            <li><a href="voos.html" title="Vá para a pagina de Voos">Página de Voos ✈️</a><br></li>
+            <li><a href="relatórios.html" title="Vá para a pagina de relatórios">Página de Relatórios 📝</a><br></li>
+            <li><a href="index.html" title="Volte para a página principal.">Voltar para página principal❌</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    </div>
+
+    <div id="formulario">  
+    
+        <form >
+            <br>
+            <label for="numero">Número do Voo: </label> 
+            <input type="text" id="numero" name="numerovoo" placeholder="Digite o número do Voo" required> 
+            <br> <br>
+
+            <label for="piloto">Piloto:</label>
+            <select name="piloto" id="piloto">
+
+                <option value="Silvia Lima">Silvia Lima</option>
+                <option value="Carmen da Silva Costa">Carmen da Silva Costa</option>
+                <option value="Lucas Ferreira Lima">Lucas Ferreira Lima</option>
+                <option value="Bruno Ferreira Santos">Bruno Ferreira Santos</option>
+                <option value="Leonardo Da Silva Gomes">Leonardo Da Silva Gomes</option>
+                <option value="Michele Lima Casale">Michele Lima Casale</option>
+                <option value="Renan Cardoso Soares">Renan Cardoso Soares</option>
+
+            </select>
+
+
+            <br><br> 
+
+            <label for="datasaida">Data de saída:</label>
+            <input type="date" id="datasaida" name="datasaida">
+            <br><br>
+
+            <label for="horariosaida">Horário de saída:</label>
+            <input type="time" id="horariosaida" name="horariosaida">
+            <br><br>
+
+        
+            <label for="datachegada">Data de chegada:</label>
+            <input type="date" id="datachegada" name="datachegada">
+            <br><br>
+
+            <label for="horariochegada">Horário de chegada:</label>
+            <input type="time" id="horariochegada" name="horariochegada">
+            <br><br>
+
+            <label for="ocorrencias">Digite abaixo as ocorrências durante o Voo: </label> <br>
+            <textarea name="ocorrencias" id="ocorrencias" cols="30" rows="5" placeholder=" Digite aqui as ocorrências durante o Voo"> 
+            </textarea>
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Redefinir">
+            
+
+    
+    
+        </form>
+    </div>
+    
+    
+
+    <div id="rodape"> 
+    <hr>
+    <footer> <!--Nome do grupo-->
+        <p>Site feito em conjunto por <i>Renan Brufato / Renan Lima / Vitor Bonelli &reg;</i></p>
+    </footer>
+    </div>
+    
+</body>
+</html>

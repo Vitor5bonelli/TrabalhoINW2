@@ -1,0 +1,188 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voos</title>
+    <link rel="icon" type="image/png" sizes="46x46" href="../image/voos.ico">
+
+    <style>
+    body { background-color:#46B9AC;}
+
+    #heather{
+    background-image: url(../image/aviao.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-style: oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #lista {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(76, 77, 75);
+            border: 3px solid black;
+            border-radius: 5px;
+            height: 50px;
+            
+        }
+
+        li{
+            float: left;           
+        }
+
+        li a{
+            display: block;
+            color:white;
+            text-align:center;
+            padding: 14px 123.1px;
+            text-decoration: none;
+            
+        }
+
+        li a:hover:not(.ativo){
+            background-color: blue;
+        }
+
+        li a.ativo{
+           color: ivory;
+           background-color: black;
+        }
+    
+
+    #formulario{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #3265CD;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    padding: 30px;
+    background-image: url(../image/aviao1.jpeg);
+    background-repeat: no-repeat;
+    background-size:100%; 
+    background-position-y: center;
+
+    }
+    #rodape{
+        background-color:#46B9AC;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+    }
+
+    </style>
+</head>
+
+
+
+   
+    <div id="heather" >
+
+        <h1 style="color: #CD9A32; text-align:center;">R.R.Viagens</h1>
+        <h2 style="color: #CD9A32; text-align:center;">Trazendo o maior conforto e rapidez, á você e sua família.</h2>
+    
+    </div>
+
+    <br> 
+
+    <div id="links">  
+    </fieldset>
+    <nav> <!--Links de acesso á outras páginas-->
+        <ul id="lista">
+            <li><a href="pilotos.html" title="Vá para a pagina de pilotos">Página de Pilotos 👨‍✈️</a><br></li>
+            <li><a href="viagem.html" title="Vá para a pagina de Voos">Página de Viagem 🧭</a><br></li>
+            <li><a href="relatórios.html" title="Vá para a pagina de relatórios">Página de Relatórios 📝</a><br></li>
+            <li><a href="index.html" title="Saia do site.">Voltar para página principal❌</a></li>
+        </ul>
+    </nav>
+    <br>
+
+        <div id="formulario">
+            <form >
+                <label for="numero">Número: </label> 
+                <input type="text" id="numero" name="numerovoo" placeholder="Digite o número do Voo" required> 
+                <br> <br>
+    
+                <label for="cidadeorigem">Cidade Origem:</label>
+                <select name="origem" id="cidadeorigem">
+                    <option value="REC">Recife, Guararapes Gilberto Freyre (REC)</option>
+                    <option value="FLL">Fort Lauderdale (FL), Fort Lauderdale–Hollywood Intl Airport (FLL)</option>
+                    <option value="FOR">Fortaleza, Pinto Martins (FOR)</option>
+                </select>
+                <br><br>
+    
+                <label for="cidadedestino">Cidade Destino:</label>
+                <select name="destino" id="cidadedestino">
+                    <option value="REC">Recife, Guararapes Gilberto Freyre (REC)</option>
+                    <option value="FLL">Fort Lauderdale (FL), Fort Lauderdale–Hollywood Intl Airport (FLL)</option>
+                    <option value="FOR">Fortaleza, Pinto Martins (FOR)</option>
+                </select>
+    
+                <br><br>
+    
+                <label for="numero">Distância: </label> 
+                <input type="text" id="numero" name="numerovoo" placeholder=" " required> 
+                <br> <br>
+    
+                <label for="TEMPO">Tempo médio: </label> 
+                <input type="text" id="TEMPO" name="TEMPO" placeholder=" " required> 
+                <br> <br>
+    
+                <label for="aeronave">Aeronave:</label>
+                <select name="aeronave " id="aeronave">
+                    <option value="Azul">Azul</option>
+                    <option value="latam">Latam</option>
+                    <br><br>
+                
+                </select>
+                <br><br>
+                <label for="Escalas">Escalas:</label> <br>
+    
+                <input type="checkbox" id="brasilia" name="escalas">
+                <label for="brasilia"> Brasília, Juscelino Kubitschek (BSB)</label>
+                <br>
+                <input type="checkbox" id="campinas" name="escalas">
+                <label for="campinas"> Campinas, Viracopos-Campinas (VCP)</label>
+                <br>
+    
+                <input type="checkbox" id="Rio" name="escalas">
+                <label for="rio"> Rio de Janeiro, Santos Dumont (SDU) </label>
+                <br>
+                <input type="checkbox" id="sp" name="escalas">
+                <label for="sp"> São Paulo, Guarulhos Cumbica (GRU) </label>
+    
+                <br><br>
+    
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Redefinir">
+                <br>
+                <button>Listar Todos</button>
+                <button>Listar Um</button>
+                <button>Incluir</button>
+                <button>Alterar</button>
+                <button>Excluir</button>
+                
+                
+    
+            </form>
+        </div>
+        
+   
+   
+        <div id="rodape">
+            <hr>
+            <footer> <!--Nome do grupo-->
+                <p>Site feito em conjunto por <i>Renan Brufato / Renan Lima / Vitor Bonelli &reg;</i></p>
+            </footer>
+        </div>
+    
+    
+</body>
+
+
+
+</html>
